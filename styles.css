@@ -1,0 +1,145 @@
+:root {
+    --yellow-xxx: #F4D04E;
+    --gray-950: #111111;
+    --gray-500: #6B6B6B;
+    --attribution-color: hsl(228, 45%, 44%); 
+    --box-content-width: 21rem;
+}
+
+* {
+    margin: 0rem;
+    padding-inline: 0rem;
+}
+
+h1 {
+    font-size: 0rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    background-color: red;
+    height: 1px;
+    border:none;
+}
+/* This is to center all content in the middle of the screen */
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: gray;
+
+}
+
+/* This creates the mid-column */
+.x-centered-box-outer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 50rem;
+    height: 100vh;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: repeat-x;
+}
+
+/* This is to create a vertically centered box inside the outer box */
+.x-centered-box-inner {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 50rem;
+    height: 32.625rem;
+    background-color: none;
+    box-sizing: border-box;
+}
+
+.x-centered-box-item {
+    margin-inline: 1rem;
+}
+
+.title {
+    background-image: url(./images/pattern-circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 10rem;
+}
+
+.title-subtitle-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title-subtitle-item {
+    margin-inline: 0.1rem;
+}
+
+.pricing-box {
+    background-color: whitesmoke;
+    max-width: 50rem
+    box-sizing:border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pricing-box-item {
+    min-width: 150px;
+    flex-grow: 2;
+}
+
+.o1 {
+    order: 1;
+}
+
+.o2 {
+    order: 2;
+}
+
+.o3 {
+    order: 3;
+}
+
+.monthly {
+    margin-block-end: 1px;
+}
+.promisses {
+    margin-block-start: 1px;
+}
+
+/* Frontend Mentor Attribution Styles */
+
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 30rem) {
+
+   .title-subtitle-box{
+    flex-direction: row;
+   }
+
+   .o3 {
+        order: 2;
+    }
+    .o2 {
+        order: 3;
+    }
+}
